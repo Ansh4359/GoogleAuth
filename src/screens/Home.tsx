@@ -49,6 +49,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Welcome Home</Text>
         <TouchableOpacity onPress={() => navigation.navigate('Reel')} style={styles.reelView}>
@@ -61,7 +62,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-      <ScrollView style={styles.scrollView}>
+      //
         <View style={styles.content}>
           {/* Featured Section */}
           <View style={styles.section}>

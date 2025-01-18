@@ -41,7 +41,7 @@ const VideoFeedScreen: React.FC<VideoFeedScreenProps> = ({ navigation }) => {
       id: '2',
       username: 'user_two',
       profilePic: 'https://randomuser.me/api/portraits/women/1.jpg',
-      videoUrl: 'https://cdn.pixabay.com/video/2023/05/07/11695-170248712_large.mp4',
+      videoUrl: 'https://dl.dropboxusercontent.com/scl/fi/uwsohsiwu96t1do58t38q/amritudyan.mp4?rlkey=02ht85oftowdmplx1266bkhkp&st=czoy6i6q&dl=0',
       likes: 856,
       caption: 'Amazing view 🎉',
       comments: 45,
@@ -89,6 +89,7 @@ const VideoFeedScreen: React.FC<VideoFeedScreenProps> = ({ navigation }) => {
           style={styles.video}
           resizeMode="cover"
           repeat
+        
           muted={muteStatus[item.id]}
           playInBackground={false}
           controls={false}
